@@ -49,7 +49,8 @@ public class SistemaExamenesBackendApplication implements CommandLineRunner {
         usuarioRoles.add(usuarioRol);
 
         Usuario usuarioGuardado = usuarioService.guardarUsuario(usuario, usuarioRoles);
-        System.out.println("Usuario guardado: **** " + usuarioGuardado.getUsername()+ " ****"); */
+        System.out.println("Usuario guardado: **** " + usuarioGuardado.getUsername()+ " ****");
+        */
     }
 
     public static void main(String[] args) {

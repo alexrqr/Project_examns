@@ -17,7 +17,7 @@ public class Category {
     private String description;
 
     // Relacion de categoría a examen
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     @JsonIgnore
     private Set<Exam> examns = new LinkedHashSet<>();
 

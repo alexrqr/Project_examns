@@ -9,8 +9,9 @@ import java.util.List;
 public interface ExamRepository extends JpaRepository<Exam, Long> {
 
     // Metodos de filtrado
-    List<Exam> findByCategoria(Category category);
-    List<Exam> findByStatus(Boolean estado); // Busqueda por active...
-    List<Exam> findByCategoriaAndStatus(Category category, Boolean estado); // busqueda por categoria y estado
+    List<Exam> findByCategory(Category category);
+    List<Exam> findByActive(Boolean active);
+    List<Exam> findByCategoryAndActive(Category category, Boolean active);
+    // busqueda por categoria y estado
 
 }
